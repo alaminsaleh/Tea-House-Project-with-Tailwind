@@ -4,20 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House Project</title>
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/53ea01123b.js" crossorigin="anonymous"></script>
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style>
+        .manrope-font {
+    font-family: "Manrope", sans-serif;
+    }
+    </style>
+
 </head>
-<body>
-    <header>
+<body class="manrope-font">
+    <!-- Main content -->
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+      <!-- Banner section -->
+    <header class=" lg:flex sm:mt-12 ">
+      <!-- Text Content -->
+      <div class="space-y-4">
+        <h1 class="text-5xl md:text-6xl font-bold">It's good  <br> tea time at The <br> Tea House</h1>
+        <p class="w-3/4 text-gray-400">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+        <button class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold h-14"> Explore More  <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+      </div>
 
+      <!-- Image Content -->
+      <div class="relative">
+        <!-- image -->
+         <div>
+          <img class="w-full" src="./images/banner.png" alt="">
+         </div>
+         <!-- Card -->
+          <div class="flex absolute shadow-lg rounded-lg py-2 px-6 md:px-6 lg:py-4 items-center bg-white top-72 left-28 md:top-80 md:left-20 ">
+            <!-- Icon -->
+             <div><i class="fa-solid fa-star text-orange-500 text-2xl"></i></div>
+             <!-- Text -->
+              <div class="ml-4">
+                <h3 class="font-bold text-2xl">5.00</h3>
+                <p class="text-gray-400">Trust Pilot Ratings</p>
+              </div>
+          </div>
+       </div>
     </header>
-
-    <main>
 
     </main>
 
     <footer>
-        
+
     </footer>
 </body>
 </html>
